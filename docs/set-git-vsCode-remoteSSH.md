@@ -9,20 +9,15 @@
    접속하면 원격 서버에 접속해서 서버의 폴더에서 작업 가능
 
 ### intellij remote server ssh 접속 작업하기
-1. tool > deployment > configuration >
-2. 이름 지정 > connection
+1. 새 프로젝트 ssh > new connection > 추가 > host, username 등 >  접속하기
+2. 프로젝트 실행 후 생성 : tool > deployment > configuration > 이름 지정 > connection
   type : sftp
   ssh configuration : kal@IP_address
-
   Root path : /home/kal/ansible-rhel # 원격서버 작업 위치
   Use sudo to run ... : check
-  Mappings >
-  local path : C:\ansible\ansible-rhel
+  Mappings >  local path : C:\ansible\ansible-rhel
   Deployment path : / # 이렇게 해야 root path로 올라감
-
-3. 파일 올리기
-   파일을 끌어서 폴더로 옮기거나,
-   파일 우클릭 => deployment > upload to ...
+  파일 올리기 : 파일을 끌어서 폴더로 옮기거나, 파일 우클릭 => deployment > upload to ...
 
 ### git 설정
 git에 repository 생성 => 서버에서 key 생성 => git에 key.pub 등록
