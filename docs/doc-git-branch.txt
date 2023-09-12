@@ -1,6 +1,7 @@
-git checkout -b gitBranch # switch to new branch
+git checkout -b testbranch # switch to new branch
 git status
 수정
 git add [file]
 git commit -m "some text" [file] 
 git checkout main # master로 가서 확인하면 안보임
+git merge testbranch
