@@ -1,0 +1,9 @@
+git checkout -b testbranch # switch to new branch
+git status
+수정
+git add [file]
+git commit -m "some text" [file]
+# merge 하기 전까지는 test branch에서 만 보임
+
+git checkout main # master로 가서 확인하면 안보임
+git merge testbranch # 이렇게 하면 branch 내용이 main으로 들어감
